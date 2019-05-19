@@ -5,7 +5,7 @@ Bamazon is a Node.js application that is run through the command prompt. There a
 ### Module Dependencies
 The following Node modules are used (and are included in the package.json file):
 * inquirer - used for user interaction. Provides prompts and walks the user through required information for their commands.
-* dotenv - used for storing environmental variables for the users computer to run LIRI (database credentials in this instance).
+* dotenv - used for storing environmental variables for the users computer to run the app (database credentials in this instance).
 * mysql - used for providing SQL queries through Node.js on the bamazon database.
 
 ### Bamazon Customer: View Inventory and Purchase an Item
@@ -16,39 +16,21 @@ The following Node modules are used (and are included in the package.json file):
   
 ![Screenshot](README_images/bamazonCust1.gif)
 
-* Since the application checks the inventory each time a request is made, as can be seen below, if their is insufficient inventory to fulfill the customer's request, Bamazon will not allow the order to got through.
+* Since the application checks the inventory each time a request is made, as can be seen below, if there is insufficient inventory to fulfill the customer's request, Bamazon will not allow the order to got through.
 
 ![Screenshot](README_images/bamazonCust2.gif)
 
 * The database schema for Bamazon can be seen below:
 ![Screenshot](README_images/bamazonDatabaseSchema.png)
 
-### LIRI Command 2: Spotify Search Via Spotify Node Module
-* Command Line Call: *node liri.js spotify-this-song "<song name here>"*
-* This feature will search the spotify node module for the best match of your search and display pertinent info including a streaming link. An example is shown below.
+### Bamazon Manager Function 1: *View Products for Sale*
+* When running bamazonManager.js, a list of a few options will show on the console.
+* This feature will query the database and show the manager what is currently in stock.
   
-![Screenshot](README-images/LIRI3-Spotify.png)
+![Screenshot](README_images/bamazonManager1.gif)
 
-### LIRI Command 3: Movie Information Search Via OMDB
-* Command Line Call: *node liri.js movie-this "<Movie name here>"*
-* This feature will search the OMDB API and pull pertinent movie information on your requested movie. An example is shown below.
-  
-![Screenshot](README-images/LIRI4-Movies.png)
+### Bamazon Manager Function 2: *View Low Inventory*
+* This feature will query the database and show the manager any items that have a stock of less than 5 units available.
+* If everything is properly stocked, the manager will be notified of that as well.
 
-### LIRI Command 4: 
-* Command Line Call: *node liri.js do-what-it-says*
-* This function will pull in *random.txt* and run whatever LIRI command is stored there us the file-system module.
-An example text instruction and output is shown below, which pulls a spotify search for one of the songs I have published:
-
-![Screenshot](README-images/LIRI6-random-text.png)
-![Screenshot](README-images/LIRI5-Text-Instruction.png)
-
-### LIRI Default Prompt:
-* If no additional argument is passed in to LIRI (i.e., only "node liri.js" is entered), LIRI will provide a default command list to explain it's functionality.
-
-![Screenshot](README-images/LIRI1-Default-Prompt.png)
-
-### LIRI Log File
-* Each time a LIRI command is entered, a log file entry is saved. The Moment.js node module is used to generate a time stamp and append it to the text file so a search history can be retrieved. 
-
-![Screenshot](README-images/LIRI7-LogFile.png)
+![Screenshot](README_images/bamazonManager2.gif)
