@@ -34,3 +34,10 @@ The following Node modules are used (and are included in the package.json file):
 * If everything is properly stocked, the manager will be notified of that as well.
 
 ![Screenshot](README_images/bamazonManager2.gif)
+
+### Bamazon Manager Function 3: *Add to Inventory*
+* This feature will query allow the manager to increase the inventory of an item already in stock.
+* It will then report the new stock and ensure the database is updated.
+
+![Screenshot](README_images/bamazonManager3.gif)
+
