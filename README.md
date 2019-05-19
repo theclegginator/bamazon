@@ -46,5 +46,13 @@ The following Node modules are used (and are included in the package.json file):
 * It will ask the manager questions about all the details needed to add the item.
 
 ![Screenshot](README_images/bamazonManager4.gif)
+
+* As can be seen below, the item, "PBJ", that was just entered, is now shown when querying the database for available products.
+
 ![Screenshot](README_images/bamazonManager5.gif)
 
+### Bamazon Manager Function 5: *I'm done here*
+
+* Lastly, when you are done with your managerial tasks, you can exit the application.
+
+![Screenshot](README_images/bamazonManager6.gif)
