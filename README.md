@@ -9,10 +9,13 @@ The following Node modules are used (and are included in the package.json file):
 * mysql - used for providing SQL queries through Node.js on the bamazon database.
 
 ### Bamazon Customer: View Inventory and Purchase an Item
-* Command Line Call: *node liri.js concert-this "<band/artist name here>"*
-* This feature will search the Bandsintown API for the next 3 upcoming events for the artist specified, along with some info about where and when to find the show. An example is shown below.
+* When running bamazonCustomer.js, the current inventory of the Bamazon database will be display.
+* The user will be prompted with which item ID from the database they would like to purchase.
+* 
   
 ![Screenshot](README_images/bamazonCust1.gif)
+
+![Screenshot](README_images/bamazonCust2.gif)
 
 ### LIRI Command 2: Spotify Search Via Spotify Node Module
 * Command Line Call: *node liri.js spotify-this-song "<song name here>"*
