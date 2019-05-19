@@ -41,3 +41,10 @@ The following Node modules are used (and are included in the package.json file):
 
 ![Screenshot](README_images/bamazonManager3.gif)
 
+### Bamazon Manager Function 4: *Add New Product*
+* This feature will query allow the manager to add a brand new product (database line item) to the inventory
+* It will ask the manager questions about all the details needed to add the item.
+
+![Screenshot](README_images/bamazonManager4.gif)
+![Screenshot](README_images/bamazonManager5.gif)
+
