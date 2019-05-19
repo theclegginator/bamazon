@@ -65,6 +65,7 @@ function checkInventory(purchaseItem, purchaseNumber) {
             let totalCost = purchaseNumber * itemCost;
             if (purchaseNumber > stock) {
                 console.log(`We are sorry! \nWe cannot fulfill your order for ${purchaseNumber} ${itemName}(s). \nWe only have ${stock} in stock!`)
+                askCustomer();
             }
             else {
                 let newStock = stock - purchaseNumber;

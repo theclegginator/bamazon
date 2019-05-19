@@ -24,7 +24,7 @@ function listItems() {
           throw error;
         }
       else {
-          console.log(results);       
+          console.log(results);
           console.log("\x1b[32m", "\nThe items above are what we have in stock! \nWhat would you like to do next?")
           console.log("\x1b[0m", "")
           askManager();
