@@ -4,7 +4,6 @@ var inquirer = require('inquirer');
 
 let hostName = process.env.HOST;
 let pass = process.env.PASS;
-console.log(pass)
 // Variables for MySQL connection.
 var connection = mysql.createConnection({
   host     : hostName,
