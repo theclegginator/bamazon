@@ -2,3 +2,4 @@ package-lock.json
 homework_instructions.md
 node_modules
 .env
+.DS_store
